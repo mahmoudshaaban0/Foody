@@ -1,0 +1,24 @@
+# it's describe what the workflows doing so it's gonna build my project , run my unit test , make sure those basic oper work
+name: Android Build
+
+#on what action should work
+on: push
+
+jobs:
+  build:
+#
+    #@v1 version of checkout i want to use
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Set Up JDK
+        uses: actions/setup-java@v1
+        with:
+          java-version: 1.8
+
+      - name: Build Project
+        run: ./gradlew assemble
+
+      - name: Run Tests
+        run: ./gradlew test
