@@ -1,6 +1,7 @@
 package com.mahmoudshaaban.foody.ui.theme
 
 import androidx.compose.material.Typography
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
@@ -8,41 +9,38 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import com.mahmoudshaaban.foody.R
 
-private val NunitoBold = FontFamily(Font(R.font.nunitosans_bold))
-private val NunitoSemiBold = FontFamily(Font(R.font.nunitosans_semibold))
-private val NunitoLight = FontFamily(Font(R.font.nunitosans_light))
+private val SfUiDisplayBold = FontFamily(Font(R.font.sf_ui_display_bold_))
+private val SfUiDisplayMedium = FontFamily(Font(R.font.sf_ui_display_medium))
+private val SfUiDisplayLight = FontFamily(Font(R.font.sf_ui_display_light_))
+private val SfUiDisplaySemiBold = FontFamily(Font(R.font.sf_ui_dispaly_semibold))
 
 
 val Typography = Typography(
     h1 = TextStyle(
-        fontFamily = NunitoBold,
-        fontSize = 18.sp
+        fontFamily = SfUiDisplayBold,
+        fontSize = 48.sp
     ),
     h2 = TextStyle(
-        fontFamily = NunitoSemiBold,
-        fontSize = 14.sp,
-        letterSpacing = 0.15.sp
+        fontFamily = SfUiDisplayBold,
+        fontSize = 36.sp,
     ),
     subtitle1 = TextStyle(
-        fontFamily = NunitoLight,
-        fontSize = 16.sp
+        fontFamily = SfUiDisplayMedium,
+        fontSize = 18.sp
     ),
     body1 = TextStyle(
-        fontFamily = NunitoLight,
-        fontSize = 14.sp
+        fontFamily = SfUiDisplayLight,
+        fontSize = 18.sp ,
     ),
+
     body2 = TextStyle(
-        fontFamily = NunitoLight ,
+        fontFamily = SfUiDisplaySemiBold,
         fontSize = 12.sp
     ),
-    button = TextStyle(
-        fontFamily = NunitoSemiBold ,
-        fontSize = 14.sp ,
-        letterSpacing = 1.sp
-    ) ,
-    caption = TextStyle(
-        fontFamily = NunitoSemiBold,
-        fontSize = 12.sp,
 
-        )
+    button = TextStyle(
+        fontFamily = SfUiDisplayMedium ,
+        fontSize = 16.sp ,
+    )
+
 )
